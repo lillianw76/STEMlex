@@ -1,82 +1,6 @@
-/* REMEMBER: COPY AND PASTE THIS CODE (BACKGROUND + NAVIGATION BAR) INTO EACH CSS FILE IF ANY CHANGES ARE MADE */
-
 /* Import fonts here */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-
-/* OpenDyslexic Font */
-@font-face {
-    font-family: "openDyslexic";
-    src: url(file/resource/39C3CCF920030515B1DBFF22B7D91207394AD65C502267D8.woff);
-}
-@font-face {
-    font-family: "openDyslexic";
-    src: url("file/resource/429F001D200303FFF6E56F77B906690AB327C2FC06326420.woff");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "openDyslexic";
-    src: url("file/resource/429F0F3E20030EA721321F3491BA3D046063DCDC848F129B.woff");
-    font-style: italic, oblique;
-}
-@font-face {
-    font-family: "openDyslexic";
-    src: url("file/resource/429F091E200300ABDC76AFFF8047FF061364FD7C83721D3F.woff");
-    font-weight: bold;
-    font-style: italic, oblique;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Lato', sans-serif;
-  background-color: #f2f2f2;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #95E09D; 
-  padding: 0.5%;
-  align-items: center;
-}
-
-.nav-button {
-  margin-left: 2%;
-  margin-right: 2%;
-  border: none;
-  padding: 0.5%;
-  background-color: #95E09D; 
-  font-size: 140%;
-  width: auto;
-  height: 60%;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.home-button {
-  margin-left: 12%;
-}
-
-.nav-button:hover {
-  background-color: lightgreen;
-  opacity: 0.7;
-}
-
-.logo {
-  width: 6%;
-  margin-left: 4%;
-  height:auto;
-  object-fit: contain;
-}
-
-/* unique css code below (don't copy and paste) */
 
 h2 {
   text-align: center;
@@ -109,8 +33,6 @@ input {
 
 .section2 {
   margin-left: 8%;
-/*   border: 2px solid black; 
-  padding: 2%; */
 }
 
 .one-and-two {
@@ -198,7 +120,7 @@ input {
   width: 70%;
   margin-top: 2%;
   margin-bottom: 2%;
-  background-color: rgba(204, 245, 211, 0.5); /*  rgb(204, 245, 211) */
+  background-color: rgba(204, 245, 211, 0.5);
 }
 
 .all-centered {
