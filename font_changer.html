@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Font Changer</title>
+  <link href="font_changer.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <img src="images/STEMlex Logo.svg" alt="logo" class="logo">
+    <button class="nav-button home-button"><strong>HOME</strong></button>
+    <button class="nav-button font-button"><strong>FONT CHANGER</strong></button>
+    <button class="nav-button stem-button"><strong>STEM</strong></button>
+    <button class="nav-button tips-button"><strong>TIPS</strong></button>
+    <button class="nav-button help-button"><strong>HOW TO HELP</strong></button>
+  </div>
+
+  <img src="images/fontchanger.png" alt="Font Changer" class="banner">
+  
+  <section class="all-centered">
+  <section class="all">
+  <section class="one-and-two">
+  <section class="section1">
+  <h2>Step 1: Choose a font</h2>
+  
+  <form>      
+    <label> <input type="radio" id="lato" name="font"> Lato</label>
+    <br> 
+    <label> <input type="radio" id="montserrat" name="font"> Montserrat</label>
+    <br>
+    <label> <input type="radio" id="open-sans" name="font"> Open Sans</label>
+    <br>
+    <label> <input type="radio" id="roboto" name="font"> Roboto</label>
+    <br>
+    <label> <input type="radio" id="comic-sans" name="font"> Comic Sans</label>
+    <br>
+    <label> <input type="radio" id="verdana" name="font"> Verdana</label>
+    <br>
+    <label> <input type="radio" id="helvetica" name="font"> Helvetica</label>
+    <br>
+    <label> <input type="radio" id="open-dyslexic" name="font"> Open Dyslexic</label>
+  </form>
+  </section>
+
+  <section class="section2">
+  <h2>Step 2: Choose a background color</h2>
+  
+  <form>      
+    <label> <input type="radio" id="light-yellow" name="color"> Light yellow</label>
+    <br> 
+    <label> <input type="radio" id="light-green" name="color"> Light green</label>
+    <br>
+    <label> <input type="radio" id="light-gray" name="color"> Light gray</label>
+    <br>
+    <label> <input type="radio" id="light-blue" name="color"> Light blue</label>
+    <br>
+    <label> <input type="radio" id="light-purple" name="color"> Light purple</label>
+    <br>
+    <label> <input type="radio" id="pink" name="color"> Pink</label>
+    <br>
+    <label> <input type="radio" id="peach" name="color"> Peach</label>
+    <br>
+    
+  </form>
+  </section>
+  </section>
+
+  <section class="section3-centered">
+  <section class="section3">
+    <h2 class="step3">Step 3: Copy and paste your text</h2>
+    <textarea rows ="30" cols ="125" name ="input" maxlength="20000" class="input"> </textarea>
+    
+    <h3>Would you like to preserve the white space?</h3>
+    <label class="y-n"><input type="radio" id="yes" name="white-space" class="y-n"> Yes</label>
+    <label class="y-n"><input type="radio" id="no" name="white-space" class="y-n"> No</label>
+  </section>
+  </section>
+
+  <section class="button-container">
+    <button class="submit-btn">Submit my choices!</button>
+  </section>
+
+
+  <section class="section4-centered">
+  <section class="section4">
+    <h2 class="output-title">Your text</h2>
+    <section class="output-centered">
+      <div id="output" class="output">
+        <!-- output of text -->
+    </div>
+    </section>
+  </section>
+  </section>
+
+
+  <section class="button-container">
+    <button class="reset-btn">Reset my text!</button>
+    <!-- reset button currently removes the append (text that is outputted) -->
+    <!-- to work on: it should also remove the text in the textarea/input thing (not the color & font choices tho) -->
+  </section>
+
+  </section> <!-- class="all" -->
+  </section> <!-- class="all-centered" -->
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+/* REMEMBER: COPY AND PASTE THIS CODE (BACKGROUND + NAVIGATION BAR) INTO EACH CSS FILE IF ANY CHANGES ARE MADE */
+
+/* Import fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+
+/* OpenDyslexic Font */
+/* <style> */
+@font-face {
+    font-family: "openDyslexic";
+    src: url(file/resource/39C3CCF920030515B1DBFF22B7D91207394AD65C502267D8.woff);
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F001D200303FFF6E56F77B906690AB327C2FC06326420.woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F0F3E20030EA721321F3491BA3D046063DCDC848F129B.woff");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F091E200300ABDC76AFFF8047FF061364FD7C83721D3F.woff");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+/* <style> */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #95E09D; 
+  padding: 0.5%;
+  align-items: center;
+}
+
+.nav-button {
+  margin-left: 2%;
+  margin-right: 2%;
+  border: none;
+  padding: 0.5%;
+  background-color: #95E09D; 
+  font-size: 140%;
+  width: auto;
+  height: 60%;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-button {
+  margin-left: 12%;
+}
+
+.nav-button:hover {
+  background-color: lightgreen;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 6%;
+  margin-left: 4%;
+  height:auto;
+  object-fit: contain;
+}
+
+.stem-library {
+  font-family: "openDyslexic";
+  margin: 20px;
+}
+
+.subtitle {
+  margin-top: 5px;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  margin-bottom: 3%;
+}
+
+/* Library */
+.library {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
+}
+
+/* Book One */
+.bookOne {
+  display: flex;
+  position: relative;
+  width: 150px;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookOneImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookOneOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookOneOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookOneOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookOneOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookOneOverlay:hover {
+  opacity: 1;
+}
+
+.bookOneName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookOneAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookOneKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.book-one-btn {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Book Two */
+.bookTwo {
+  display: flex;
+  position: relative;
+  width: 150px;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookTwoImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookTwoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookTwoOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookTwoOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookTwoOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookTwoOverlay:hover {
+  opacity: 1;
+}
+
+.bookTwoName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookTwoAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookTwoKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bookTwoBtn {
+  font-size: 14px;
+  margin-top: 55px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Book Three */
+.bookThree {
+  display: flex;
+  position: relative;
+  width: 150px;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookThreeImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookThreeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookThreeOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookThreeOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookThreeOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookThreeOverlay:hover {
+  opacity: 1;
+}
+
+.bookThreeName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookThreeAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookThreeKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bookThreeBtn {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Book Four */
+.bookFour {
+  display: flex;
+  position: relative;
+  width: 150px;
+ flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookFourImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookFourOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookFourOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookFourOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookFourOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookFourOverlay:hover {
+  opacity: 1;
+}
+
+.bookFourName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookFourAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookFourKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bookFourBtn {
+  font-size: 14px;
+  margin-top: 55px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Book Five */
+.bookFive {
+  display: flex;
+  position: relative;
+  width: 150px;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookFiveImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookFiveOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookFiveOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookFiveOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookFiveOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookFiveOverlay:hover {
+  opacity: 1;
+}
+
+.bookFiveName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookFiveAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookFiveKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bookFiveBtn {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Book Six */
+.bookSix {
+  display: flex;
+ 
+  position: relative;
+  width: 150px;
+ flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookSixImage {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.bookSixOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.bookSixOverlay-color {
+  background: #b7ffba;
+  border-radius: 8px;
+}
+
+.bookSixOverlay {
+  transform: translateY (20px);
+  transition: transform 0.25s;
+}
+
+.bookSixOverlay:hover {
+  transform: translateY (0px);
+  transition: transform 0.25s;
+}
+
+.bookSixOverlay:hover {
+  opacity: 1;
+}
+
+.bookSixName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bookSixAuthor {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bookSixKeyPoints {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bookSixBtn {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+

@@ -1,0 +1,317 @@
+/* REMEMBER: COPY AND PASTE THIS CODE (BACKGROUND + NAVIGATION BAR) INTO EACH CSS FILE IF ANY CHANGES ARE MADE */
+
+/* Import fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+
+/* OpenDyslexic Font */
+
+@font-face {
+    font-family: "openDyslexic";
+    src: url(file/resource/39C3CCF920030515B1DBFF22B7D91207394AD65C502267D8.woff);
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F001D200303FFF6E56F77B906690AB327C2FC06326420.woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F0F3E20030EA721321F3491BA3D046063DCDC848F129B.woff");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "openDyslexic";
+    src: url("file/resource/429F091E200300ABDC76AFFF8047FF061364FD7C83721D3F.woff");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #95E09D; 
+  padding: 0.5%;
+  align-items: center;
+}
+
+.nav-button {
+  margin-left: 2%;
+  margin-right: 2%;
+  border: none;
+  padding: 0.5%;
+  background-color: #95E09D; 
+  font-size: 140%;
+  width: auto;
+  height: 60%;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-button {
+  margin-left: 12%;
+}
+
+.nav-button:hover {
+  background-color: lightgreen;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 6%;
+  margin-left: 4%;
+  height:auto;
+  object-fit: contain;
+}
+
+.flashcards {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right:10px;
+  padding-left: 10px;
+  width: 80%;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.flashcards-row {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.flashcards-p {
+  font-family: 'Lato', sans-serif;
+font-size: 20px;
+  text-align: center;
+}
+
+.firstPair{
+  padding-block: 20px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;  
+ 
+}
+
+.secondPair{
+  padding-block: 10px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;  
+}
+
+.thirdPair{
+  padding-block: 10px;
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center; 
+}
+
+.fourthPair{
+  padding-block: 10px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;  
+}
+.flipcards{ 
+  padding-block: 50px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+} 
+
+ .flipcards2{
+  display:flex;
+  flex-wrap: nowwrap; 
+  flex-direction:row ; 
+}
+
+img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+
+
+
+
+h4 {
+  margin-left: 20px;
+}
+
+
+
+h1 {
+  margin-top: 130px
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 180%;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left:20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 130%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  padding: -20px;
+  perspective: 1000px;
+	 display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+	border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+	border-radius: 10px; /* to make a circle-shaped card */
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #a8e4a0;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #baebbd;
+  color: black;
+  font-size: 30px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  transform: rotateY(180deg);
+}
+/* 
+font-family: Arial, Helvetica, sans-serif;
+} */
+
+.banner {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.listenNoRead{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right:10px;
+  padding-left: 10px;
+  width: 80%;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.listenNoRead-row {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.listenNoRead-p {
+  font-family: 'Lato', sans-serif;
+font-size: 20px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+font-size: 35px;
+font-weight: bold;
+border-left: 10px;
+}
+
+.audioBook{
+  display: flex;
+  justify-content: center;
+}
+
+.audioBookImage {
+  height: 200px;
+  object-fit: cover;
+}
+
+.highlight{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right:10px;
+  padding-left: 10px;
+  width: 80%;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.highlight-row {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.highlight-p {
+  font-family: 'Lato', sans-serif;
+font-size: 20px;
+}
+
+.highlightPic{
+  display: flex;
+  justify-content: center;
+}
+
+.highlightImage {
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 2%;
+}
